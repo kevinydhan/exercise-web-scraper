@@ -56,6 +56,7 @@ const extractDataAndCreateJSON = async exerciseHTML => {
     // Extracts data from page displaying single exercise details
 
     const singleExerciseDetailHTML = await ws.scrape({
+        // url: result.external.url
         url: '/exercises/single-exercise.html',
         proxy: false
     })
